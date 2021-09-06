@@ -440,12 +440,12 @@ func (f *File) writeToBuffer(indent string) (*bytes.Buffer, error) {
 					return nil, err
 				}
 
-				if key.isBooleanType {
-					if kname != sec.keyList[len(sec.keyList)-1] {
-						buf.WriteString(LineBreak)
-					}
-					continue KeyList
-				}
+				//if key.isBooleanType {
+				//	if kname != sec.keyList[len(sec.keyList)-1] {
+				//		buf.WriteString(LineBreak)
+				//	}
+				//	continue KeyList
+				//}
 
 				// Write out alignment spaces before "=" sign
 				if PrettyFormat {
